@@ -6,4 +6,6 @@ const createUserService = (body) => User.create(body);
 
 const findAllUserService = () => User.find();
 
-module.exports = { findByEmailUserService, createUserService, findAllUserService }
+const findByIdUserService = (idUser) => User.findById(idUser);
+
+module.exports = { findByEmailUserService, createUserService, findAllUserService, findByIdUserService}
